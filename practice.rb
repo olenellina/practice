@@ -5,9 +5,10 @@ def compressed(array)
   string = ""
   y = array.length / 2
   y.times do
-    array[x+1].to_i.times do
-      string = string + array[x]
-    end
+    # array[x+1].to_i.times do
+    #   string = string + array[x]
+    # end
+    string = string + (array[x] * array[x+1].to_i)
     x += 2
   end
   return string
