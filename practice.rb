@@ -3,7 +3,8 @@
 def compressed(array)
   x = 0
   string = ""
-  array.length.times do
+  y = array.length / 2
+  y.times do
     array[x+1].to_i.times do
       string = string + array[x]
     end
