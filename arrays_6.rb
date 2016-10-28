@@ -1,12 +1,11 @@
 ########## No Additional Storage ###############
 
-def sorted(array)
-	if array.sort == array
+def equal(array1, array2)
+	if array1.sort == array2.sort
 		return true
 	else
 		return false
 	end
 end
 
-print sorted([5,1,2,3,4,5])
-print sorted([1,2,3,4,5,6])
+print equal([5,1,2,3,4,5], [5,4,3,2,1,5])
